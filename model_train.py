@@ -26,8 +26,8 @@ errors = abs(y_pred[:, 1] - y_pred[:, 0])
 # Average of these absolute differences
 avg_error = errors.mean()
 
-print(f"📊 Average Absolute Error (Theoretical - LV): {avg_error:.2f} kW")
+print(f"Average Absolute Error (Theoretical - LV): {avg_error:.2f} kW")
 
 # Save model
 joblib.dump(model, 'model.pkl')
-print("✅ Model saved as model.pkl")
+print("Model saved as model.pkl")
